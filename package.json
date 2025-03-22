@@ -8,12 +8,14 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "server": "json-server server.json -w 500",
     "test": "vitest run"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.3",
     "@reduxjs/toolkit": "^2.6.1",
     "@tailwindcss/postcss": "^4.0.14",
+    "axios": "^1.8.4",
     "lucide-react": "^0.483.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
@@ -31,6 +33,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "json-server": "^1.0.0-beta.3",
     "tailwind-scrollbar": "^4.0.1",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
