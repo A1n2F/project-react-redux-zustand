@@ -1,4 +1,5 @@
 import { PlayCircle, Video } from "lucide-react";
+import { useAppSelector } from "../store";
 
 interface LessonProps {
     title: string
@@ -8,6 +9,23 @@ interface LessonProps {
 }
 
 export function Lesson({ title, duration, onPlay, isCurrent = false }: LessonProps) {
+    const isCourseLoading = useAppSelector(state => state.player.isLoading)
+
+    if (isCourseLoading) {
+        return (
+            <button
+                onClick={onPlay} 
+                className="flex items-center gap-3 text-md text-zinc-400 data-[active=true]:text-emerald-400 
+                enabled:hover:text-zinc-100 transition-colors cursor-pointer"
+                >
+                <span
+                    className="ml-auto font-mono text-sm text-zinc-500 data-[active=true]:text-emerald-400"
+                >
+                </span>
+            </button>
+        )
+    }
+
     return (
         <button
             onClick={onPlay} 
