@@ -5,6 +5,8 @@ Projeto Player de vídeo que poderia ser usado como parte de algum curso em víd
 - Redux: Uma biblioteca JS para gerenciamento de estado global previsível e sustentável.
 - Zustand:  Tem uma API confortável baseada em hooks, também com gerenciamento de estado global escalável.
 
+![tela1](https://github.com/user-attachments/assets/9cc61794-5c91-4c6c-b13a-5c2d081f68e4)
+
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
